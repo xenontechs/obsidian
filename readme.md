@@ -1,5 +1,22 @@
 
 Xenos markdown stuff
+
+Contents:
+
+[CSS Snippets](#css-snippets)
+- ["library Snippets](#library-snippets)
+    - [colorreference.css](#colorreference.css)
+    - [lucide-icons.css](#lucide-icons.css)
+- [Format Snippets](#format-snippets)
+    - [callouts.css](#callouts.css)
+    - [task-states.css](#task-states.css)
+    - [link-icons.css](#link-icons.css)
+    - [mermaid.css](#mermaid.css)
+    - [slide-fixes.css](#slide-fixes.css)
+- [Navigation](#navigation)
+    - [fileexplorer-hidden-items.css](fileexplorer-hidden-items.css)
+    - [folder-icons.css](folder-icons.css)
+
 # CSS snippets
 sorted by Library, Format (in-editor things), Navigation (out of editor, navigation pane, similar)
 
@@ -54,7 +71,7 @@ adds more task states:
 - [/] in progress
 - [t] delayed/backlog
 
-### link-icons
+### link-icons.css
 - uses lucide-icons.css
 
 replaces default "external link" icon with more fitting one if it matches. links to github get github logo
@@ -62,7 +79,7 @@ replaces default "external link" icon with more fitting one if it matches. links
 ### mermaid.css
 everything about this is unclear as it's been multiple minutes since I messed with mermaid.
 
-### slide fixes
+### slide-fixes.css
 everything about this is unclear as it's been multiple minutes since I messed with ~~mermaid~~ _slides_.
 
 ## Navigation
