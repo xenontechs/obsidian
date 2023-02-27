@@ -1,0 +1,14 @@
+/*replace 'external link' icon based on target*/
+/* requires lucide-icons.css */
+/* sucks because:
+- can't modify fill/stroke from url(), workaround is to set up versions of SVGs
+- need to url-encode (this helps: https://yoksel.github.io/url-encoder/)
+- doesn't work in live-edit mode because the link is handled purely in JS(?)
+
+possible improvements:
+- better selectors, before someone things this is a security feature and clicks on someshadydomain.tld/github.com/
+ */
+
+ .external-link[href*="github.com"] {background-image: var(--icon-lucide-github-mod);}
+ .external-link[href*="gitlab.com"] {background-image: var(--icon-lucide-gitlab-mod);}
+ .external-link[href*="twitch.tv"] {background-image: var(--icon-lucide-twitch-mod);}

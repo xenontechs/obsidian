@@ -1,0 +1,210 @@
+/*defines a bunch of new callouts*/
+/* requires colorreference.css */
+
+/*===GENERAL SETTINGS===*/
+/*change links to be more visible*/
+.callout .internal-link{
+    --link-color: var(--text-normal);
+    --link-color-hover: var(--text-success);
+    --link-decoration: inherit;
+    --link-decoration-thickness: 1px;
+    text-decoration-style:dashed;
+    text-decoration-color: darkgray;
+}
+.callout .external-link{
+    --link-external-color: var(--text-normal);
+    --link-external-color-hover: var(--text-error);
+    --link-external-decoration: inherit;
+    /* text-decoration-style:dashed;
+    text-decoration-color: darkgray;
+    background-image: none; */
+    /* enable lines below to overwrite external link icon */
+    /* background: none !important;
+    padding-right: 0; */
+}
+
+/*===SAFETY===*/
+.callout[data-callout="safety"] {
+    --callout-color: var(--color-blue-rgb); 
+    --callout-icon: lucide-shield-alert;
+    border-left: 4px solid rgb(var(--callout-color));
+}
+.callout[data-callout="safety"] .callout-title {
+    color: white; 
+}
+
+/*===TOOL===*/
+.callout[data-callout="tool"] {
+    --callout-color: var(--color-cyan-rgb); 
+    --callout-icon: lucide-wrench;
+    border-left: 4px solid rgb(var(--callout-color));
+}
+/* .callout[data-callout="tool"] .callout-title {
+    color: white; 
+} */
+
+/*===LINK===*/
+.callout[data-callout="link"] {
+    /* --callout-color: 255, 126, 0;  */
+    --callout-icon: lucide-link;
+    border-left: 4px solid rgb(var(--callout-color));
+}
+/* .callout[data-callout="link"] .lucide-cog {
+    color: #FF7E00;
+    fill: #241A10;
+}  */
+
+/*===IFRAME===*/
+.callout[data-callout="iframe"] {
+    /* --callout-color: 255, 126, 0;  */
+    --callout-icon: lucide-frame;
+    border-left: 4px solid rgb(var(--callout-color));
+}
+/* .callout[data-callout="iframe"] .lucide-frame {
+    color: #FF7E00;
+    fill: #241A10;
+}  */
+
+
+
+/*==================================================*/
+/*CALL OUT GAMES*/
+/*==================================================*/
+/*===GAME===*/
+.callout[data-callout="game"] {
+    --callout-color: var(--color-green-rgb); 
+    --callout-icon: lucide-gamepad-2;
+    border-left: 4px solid rgb(var(--callout-color));
+}
+/* .callout[data-callout="game"] .callout-title {
+    color: white; 
+} */
+
+/*===EVEONLINE===*/
+.callout[data-callout="eveonline"] {
+    --callout-color: 0, 0, 0; 
+    --callout-icon: lucide-rocket;
+    border-left: 4px solid rgb(var(--callout-color));
+}
+.callout[data-callout="eveonline"] .callout-title {
+    color: white; 
+}
+.callout[data-callout="eveonline"] .lucide-rocket {
+    fill: black;
+    color: grey;
+} 
+
+/*===FACTORIO===*/
+.callout[data-callout="factorio"] {
+    --callout-color: 255, 126, 0; 
+    --callout-icon: lucide-cog;
+    border-left: 4px solid rgb(var(--callout-color));
+    /* background-color: #303030;
+    border-bottom: 4px solid #241A10;
+    border-top: 1px solid #444444; 
+    color: #FF7E00;*/
+    box-shadow: inset 0px 3px 13px 1px rgba(134,36,2,0.33);
+}
+.callout[data-callout="factorio"] .lucide-cog {
+    color: #FF7E00;
+    fill: #241A10;
+} 
+
+/*==================================================*/
+/*CALL OUT PRIDE*/
+/*==================================================*/
+/*===pride===*/
+.callout[data-callout="pride"] {
+    /* border-image: linear-gradient(var(--colorreference-pride1), var(--colorreference-pride2), var(--colorreference-pride3), var(--colorreference-pride4), var(--colorreference-pride5), var(--colorreference-pride6)) 1; */
+    border-image: linear-gradient(var(--colorreference-gradient-pride)) 1;
+    background-image: linear-gradient(var(--colorreference-gradient-pride));
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    --callout-icon: lucide-heart;
+    border-left: 8px solid;
+}
+.callout[data-callout="pride"] .callout-title {
+    color: white; 
+}.callout[data-callout="pride"] svg {
+    color: white; 
+}
+
+/*===transgender===*/
+.callout[data-callout="transgender"] {
+    /* border-image: linear-gradient(var(--colorreference-pride1), var(--colorreference-pride2), var(--colorreference-pride3), var(--colorreference-pride4), var(--colorreference-pride5), var(--colorreference-pride6)) 1; */
+    border-image: linear-gradient(var(--colorreference-gradient-transgender)) 1;
+    background-image: linear-gradient(var(--colorreference-gradient-transgender));
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    --callout-icon: lucide-heart;
+    border-left: 8px solid;
+}
+.callout[data-callout="transgender"] .callout-title {
+    color: white; 
+}.callout[data-callout="transgender"] svg {
+    color: white; 
+}
+
+
+/*===nonbinary===*/
+.callout[data-callout="nonbinary"] {
+    /* border-image: linear-gradient(var(--colorreference-pride1), var(--colorreference-pride2), var(--colorreference-pride3), var(--colorreference-pride4), var(--colorreference-pride5), var(--colorreference-pride6)) 1; */
+    border-image: linear-gradient(var(--colorreference-gradient-nonbinary)) 1;
+    background-image: linear-gradient(var(--colorreference-gradient-nonbinary));
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    --callout-icon: lucide-heart;
+    border-left: 8px solid;
+}
+.callout[data-callout="nonbinary"] .callout-title {
+    color: white; 
+}.callout[data-callout="nonbinary"] svg {
+    color: white; 
+}
+
+
+/*===agender===*/
+.callout[data-callout="agender"] {
+    border-image: linear-gradient(var(--colorreference-gradient-agender)) 1;
+    background-image: linear-gradient(var(--colorreference-gradient-agender));
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    --callout-icon: lucide-heart;
+    border-left: 8px solid;
+}
+.callout[data-callout="agender"] .callout-title {
+    color: white; 
+}.callout[data-callout="agender"] svg {
+    color: white; 
+}
+
+
+/*===asexual===*/
+.callout[data-callout="asexual"] {
+    border-image: linear-gradient(var(--colorreference-gradient-asexual)) 1;
+    background-image: linear-gradient(var(--colorreference-gradient-asexual));
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    --callout-icon: lucide-heart;
+    border-left: 8px solid;
+}
+.callout[data-callout="asexual"] .callout-title {
+    color: white; 
+}.callout[data-callout="asexual"] svg {
+    color: white; 
+}
+
+
+/*===lesbian===*/
+.callout[data-callout="lesbian"] {
+    border-image: linear-gradient(var(--colorreference-gradient-lesbian)) 1;
+    background-image: linear-gradient(var(--colorreference-gradient-lesbian));
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+    --callout-icon: lucide-heart;
+    border-left: 8px solid;
+}
+.callout[data-callout="lesbian"] .callout-title {
+    color: white; 
+}.callout[data-callout="lesbian"] svg {
+    color: white; 
+}
+
+
+
+
+

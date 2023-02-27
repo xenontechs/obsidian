@@ -1,0 +1,4 @@
+/*=== HIDE FOLDER STARTING WITH UNDERSCORE"_" ===*/
+.nav-folder.mod-root>.nav-folder-children .nav-folder>.nav-folder-title[data-path^="_"],
+.nav-folder.mod-root>.nav-folder-children .nav-folder>.nav-folder-title[data-path^="_"] + .nav-folder-children{
+display: none;}

@@ -1,0 +1,10 @@
+/* === specific colors for icons placed with "Icon Folder" plugin === */
+.nav-folder-title[data-path="Eveonline"] .obsidian-icon-folder-icon svg{
+    color:rgb(255, 2, 2)
+}
+.nav-folder-title[data-path="Stream"] .obsidian-icon-folder-icon svg{
+    color:var(--colorreference-twitch, inherit)
+}
+.nav-folder-title[data-path="Factorio"] .obsidian-icon-folder-icon svg{
+    color:var(--colorreference-factorio, inherit)
+}

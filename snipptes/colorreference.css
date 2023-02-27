@@ -1,0 +1,102 @@
+/*
+this snippet is pure meta. 
+it defines a set of "known colors" for use in other places */
+
+:root {
+    --colorreference-twitch: #bf94ff;
+    --colorreference-youtube: #FF0000;
+    --colorreference-factorio: #c87835; /*chosen randomly from their logo*/
+    --colorreference-spotify: #1fdf64;
+    --colorreference-twitter: #1da1f2;
+
+    /*pride*/
+    --colorreference-pride1: #e20303;
+    --colorreference-pride2: #ff8c00;
+    --colorreference-pride3: #ffee00;
+    --colorreference-pride4: #008026;
+    --colorreference-pride5: #24408f;
+    --colorreference-pride6: #752a84;
+    --colorreference-transgender1: #5bcefa;
+    --colorreference-transgender2: #F5A9B8;
+    --colorreference-transgender3: #FFFFFF;
+    --colorreference-transgender4: var(--colorreference-transgender2);
+    --colorreference-transgender5: var(--colorreference-transgender1);
+    --colorreference-nonbinary1: #FCF434;
+    --colorreference-nonbinary2: #FFFFFF;
+    --colorreference-nonbinary3: #9C59D1;
+    --colorreference-nonbinary4: #2C2C2C;
+    --colorreference-agender1: #000000;
+    --colorreference-agender2: #BCC4C7;
+    --colorreference-agender3: #FFFFFF;
+    --colorreference-agender4: #B7F684;
+    --colorreference-agender5: var(--colorreference-agender3);
+    --colorreference-agender6: var(--colorreference-agender2);
+    --colorreference-agender7: var(--colorreference-agender1);
+    --colorreference-asexual1: #000000;
+    --colorreference-asexual2: #A3A3A3;
+    --colorreference-asexual3: #FFFFFF;
+    --colorreference-asexual4: #800080;
+    --colorreference-lesbian1: #D52D00;
+    --colorreference-lesbian2: #EF7627;
+    --colorreference-lesbian3: #FF9A56;
+    --colorreference-lesbian4: #FFFFFF;
+    --colorreference-lesbian5: #D162A4;
+    --colorreference-lesbian6: #B55690;
+    --colorreference-lesbian7: #A30262;
+
+    /*as gradient? let's gooo*/
+    --colorreference-gradient-pride: 
+        var(--colorreference-pride1), 
+        var(--colorreference-pride2), 
+        var(--colorreference-pride3), 
+        var(--colorreference-pride4), 
+        var(--colorreference-pride5), 
+        var(--colorreference-pride6); 
+    --colorreference-gradient-transgender: 
+        var(--colorreference-transgender1),
+        var(--colorreference-transgender2),
+        var(--colorreference-transgender3),
+        var(--colorreference-transgender4),
+        var(--colorreference-transgender5);
+    --colorreference-gradient-nonbinary:
+        var(--colorreference-nonbinary1),
+        var(--colorreference-nonbinary2),
+        var(--colorreference-nonbinary3),
+        var(--colorreference-nonbinary4);
+    --colorreference-gradient-agender:
+        var(--colorreference-agender1),
+        var(--colorreference-agender2),
+        var(--colorreference-agender3),
+        var(--colorreference-agender4),
+        var(--colorreference-agender5),
+        var(--colorreference-agender6),
+        var(--colorreference-agender7);
+    --colorreference-gradient-asexual:
+        var(--colorreference-asexual1),
+        var(--colorreference-asexual2),
+        var(--colorreference-asexual3),
+        var(--colorreference-asexual4);
+    --colorreference-gradient-lesbian:
+        var(--colorreference-lesbian1),
+        var(--colorreference-lesbian2),
+        var(--colorreference-lesbian3),
+        var(--colorreference-lesbian4),
+        var(--colorreference-lesbian5),
+        var(--colorreference-lesbian6),
+        var(--colorreference-lesbian7);
+
+        
+    /*
+    gradient toned town for background
+
+    *removes code block*
+    
+    FUCK NO
+    I REFUSE TO STORE COLOR IN LOOSE RGB NUMBER VARIABLES JUST TO PICK ALPHA IN A WAY
+
+    GET YOUR SHIT TOGETHER, BROWSERS
+    GIVE US FUNCTIONS TO MODIFY SINGLE VALUES OF RGBA, HSL OR WHATEVER THE COOL NEW SHIT IS
+    */
+
+    --colorreference-: #000000;
+  }
