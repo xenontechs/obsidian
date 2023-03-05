@@ -14,8 +14,9 @@ Contents:
     - [mermaid.css](#mermaid.css)
     - [slide-fixes.css](#slide-fixes.css)
 - [Navigation](#navigation)
-    - [fileexplorer-hidden-items.css](fileexplorer-hidden-items.css)
-    - [folder-icons.css](folder-icons.css)
+    - [fileexplorer-hidden-items.css](#fileexplorer-hidden-items.css)
+    - [folder-icons.css](#folder-icons.css)
+    - [force-focus.css](#force-focus.css)
 
 # CSS snippets
 sorted by Library, Format (in-editor things), Navigation (out of editor, navigation pane, similar)
@@ -93,3 +94,7 @@ hides certain folders, in this case every folder starting with an underscore (th
 
 using the "icon folder" plugin? here's where you can add colors to the icons based on folder name
 
+### force-focus.css
+When navigating out of the window, the header changes color, which impacts readability. showing if a window is in focus is great, but making it unusable just because you clocked somewhere else isnt.
+
+This snippet applies contents of the .is-focus class outside of that scope. not all the time, just as much as to fix that issue. if there's a more update-friendly way of doing this, please let me know
