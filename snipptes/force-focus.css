@@ -1,0 +1,23 @@
+body .titlebar,
+body .workspace-ribbon.mod-left {
+  --titlebar-background: var(--titlebar-background-focused);
+}
+body .sidebar-toggle-button,
+body .workspace-tabs.mod-top {
+  --tab-container-background: var(--titlebar-background-focused);
+}
+.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
+    background-color: var(--titlebar-background-focused);
+}
+.workspace-leaf.mod-active .view-header {
+    background-color: var(--background-primary);
+}
+.workspace-leaf.mod-active .view-header-title {
+    color: var(--text-normal);
+}
+.titlebar-inner {
+    color: var(--titlebar-text-color-focused);
+}
+.workspace-tab-header {
+    color: var(--tab-text-color-focused);
+}
