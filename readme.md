@@ -4,7 +4,7 @@ Xenos markdown stuff
 Contents:
 
 [CSS Snippets](#css-snippets)
-- ["library Snippets](#library-snippets)
+- [library Snippets](#library-snippets)
     - [colorreference.css](#colorreferencecss)
     - [lucide-icons.css](#lucide-iconscss)
 - [Format Snippets](#format-snippets)
@@ -41,6 +41,7 @@ whatever makes the .md more pretty. also extends features (more variants of thin
 ### callouts.css
 - uses colorreference.css
 adds additional callouts. at the moment:
+
 **General**
 - safety
 - tool
