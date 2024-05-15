@@ -2,7 +2,6 @@
 this makes it Xeno's version of Oliver's version of deathau's and Connor96's version
 more states!
 
-
 Obsidian styled checkboxes snippet (Oliver's version)
 See https://github.com/deathau/obsidian-snippets#checkboxes for a demo.
 This supports live preview editor mode and reading mode.
@@ -223,4 +222,23 @@ input[type=checkbox]:checked::after {
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16.5 12'%3E%3C/polyline%3E%3C/svg%3E");
 }
 
+/* good/pro ('- [P]') */
+.HyperMD-list-line input[data-task="P"]:checked::before,
+.markdown-preview-view li[data-task="P"]>input[type="checkbox"]:checked::before {
+    content: ':)';    
+    background-color: #000000;
+    color: #00ff00;
+    border: 1px solid var(--text-normal);
+    border-radius: 4px;
+}
+
+/* bad/con ('- [C]') */
+.HyperMD-list-line input[data-task="C"]:checked::before,
+.markdown-preview-view li[data-task="C"]>input[type="checkbox"]:checked::before {
+    content: ':(';
+    background-color: #000000;
+    color: #ff0d00;
+    border: 1px solid var(--text-normal);
+    border-radius: 4px;
+}
 
